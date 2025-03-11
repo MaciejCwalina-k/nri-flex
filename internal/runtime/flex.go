@@ -29,7 +29,7 @@ type Instance interface {
 }
 
 // Add new  runtime types to this  list. Test & Default don't go here
-var runtimeTypes = [2]Instance{new(Lambda), new(Function)}
+var runtimeTypes = [3]Instance{new(Lambda), new(Function), new(AzureFunction)}
 var log = load.Logrus
 
 // Get the first available runtime type, defaults to the server-based (Linux | Windows) Default type

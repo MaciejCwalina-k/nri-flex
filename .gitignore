@@ -17,7 +17,7 @@ LATEST
 .vendor-new*
 .idea
 dist
-.vscode
+
 .envrc
 
 envvars
@@ -26,5 +26,17 @@ results
 pkg/
 lcov.info
 
+!test/serverless/azure/flexConfigs
+!examples/azureFunctionExample/flexConfigs
 test/testbed/nri-flex
 test/testbed/scenarios.test
+
+bin
+obj
+appsettings.json
+local.settings.json
+azurite
+__blobstorage__
+__queuestorage__
+__azurite_db*__.json
+nri-flex-azure.exe
